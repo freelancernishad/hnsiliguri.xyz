@@ -49,7 +49,7 @@ h5.footer_left_main_title {
                     <div class="col-lg-4 col-md-4">
                         <div class="editorial_text">
 
-                            <h5 class="footer_left_main_title">EDITOR</h5>
+                            <h5 class="footer_left_main_title">EDITOR:</h5>
                             <h5 class="footer_left_main_title" style="margin-bottom: 17px">GIRISH MAJUMDER</h5>
 
 
