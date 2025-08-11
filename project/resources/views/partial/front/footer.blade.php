@@ -26,6 +26,15 @@
     text-align: right;
     padding-right: 20px;
 }
+
+span.footer_title {
+    font-size: 12px;
+}
+h5.footer_left_main_title {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
      </style>
 
      <!--=======================
@@ -35,20 +44,54 @@
         <footer class="footer_section footer_color">
             <div class="container">
                 <div class="row">
+
+
                     <div class="col-lg-4 col-md-4">
-                        <h4 class="editorial_text">
-                            <p align="right">সম্পাদক ও প্রকাশক :- <br/> {{ $gs->prokashok }}</p>
+                        <div class="editorial_text">
+
+                            <h5 class="footer_left_main_title">EDITOR</h5>
+                            <h5 class="footer_left_main_title" style="margin-bottom: 17px">GIRISH MAJUMDER</h5>
+
+
+                            <p class="footer-left-content" ><span class="footer_title">Publishers</span>  <br/> Rajkumar Roy</p>
+                            <p class="footer-left-content" ><span class="footer_title">News Editor</span>  <br/> Ranjit Biswas</p>
+                            <p class="footer-left-content" ><span class="footer_title">Online Editor</span>  <br/> Abir Majumder</p>
+
+
+
+                            {{-- <p align="right">সম্পাদক ও প্রকাশক :- <br/> {{ $gs->prokashok }}</p> --}}
                             {{-- <p align="right">নির্বাহী সম্পাদক : {{ $gs->sompadok }}<br/></p> --}}
                             {{-- <p align="right">বার্তা সম্পাদক : {{ $gs->barta_sompadok }}</p><p align="right"><br/></p> --}}
-                        </h4>
+
+
+                        </div>
                     </div>
+
+
                     <div class="col-lg-4 col-md-4">
-                        <h4 class="editorial_text">
-                            <p align="left">অফিস :- <br/>{!! $gs->adress !!} </p>
+                        <div class="editorial_text">
+
+
+
+
+                            <p align="left">Address: <br/> City Center,  Matigara, Siliguri, West Bengal, India<br/> &<br/>   Fulbari, Bhutkihat,  Rajganj Jalpaiguri, West Bengal, India</p>
+                            <p align="left">Mobile: {!! $gs->phone !!}<br/></p>
+                            <p align="left">e-mail :- <br/> headlinenewsportal@gmail.com, majumder.girish@gmail.com </p>
+
+
+                            {{-- <p align="left">অফিস :- <br/>{!! $gs->adress !!} </p>
                             <p align="left">মোবাইল :- <br/>{!! $gs->phone !!}<br/></p>
-                            <p align="left">ইমেইল :- <br/> {{ $gs->email }} </p>
-                        </h4>
+                            <p align="left">ইমেইল :- <br/> {{ $gs->email }} </p> --}}
+
+
+
+
+                        </div>
                     </div>
+
+
+
+
                     <div class="col-lg-4 col-md-4">
 						     @php
 								Session::has('language') ? $lid=Session::get('language') : $lid = (DB::table('languages')->where('is_default','=',1)->first()->id)
@@ -80,7 +123,7 @@
                     <div class="col-lg-6 col-md-6">
 
                        <div class="design-developed">
-                        সকল কারিগরী সহযোগিতায় <a href='https://softwebsys.com/' target='_blank' title='https://softwebsys.com'>Softweb System Solution</a>
+                        {{-- সকল কারিগরী সহযোগিতায় <a href='https://softwebsys.com/' target='_blank' title='https://softwebsys.com'>Softweb System Solution</a> --}}
                        </div>
 
                     </div>
